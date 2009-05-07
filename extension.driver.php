@@ -1,5 +1,5 @@
 <?php
-	
+
 	class extension_uniqueuploadfield extends Extension {
 
 		public function about() {
@@ -15,11 +15,11 @@
 				'description'	=> 'Upload files with unique names, using the UNIX timestamp.'
 			);
 		}
-		
+
 		public function uninstall() {
 			$this->_Parent->Database->query("DROP TABLE `tbl_fields_uniqueupload`");
 		}
-		
+
 		public function install() {
 			return $this->_Parent->Database->query("CREATE TABLE `tbl_fields_uniqueupload` (
 				`id` int(11) unsigned NOT NULL auto_increment,

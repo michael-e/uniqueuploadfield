@@ -1,10 +1,10 @@
 Field: Unique File Upload
 -------------------------------------------------------------------------------
 
-Version:       1.0
-Author:        Michael Eichelsdoerfer
-Build Date:    2009-05-06
-Requirements:  Symphony 2
+Version: 1.0
+Author: Michael Eichelsdoerfer
+Build Date: 2009-05-06
+Requirements: Symphony 2
 
 
 [Origin]
