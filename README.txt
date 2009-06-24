@@ -6,6 +6,8 @@ Author: Michael Eichelsdoerfer
 Build Date: 2009-05-06
 Requirements: Symphony 2
 
+Compatibilty: Tested on Symphony 2.0.3 (2009-06-24)
+
 
 [Origin]
 
