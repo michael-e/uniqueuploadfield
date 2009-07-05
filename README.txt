@@ -24,6 +24,12 @@ Rowan Lewis.
 
 3. You can now add the "Unique File Upload" field to your sections.
 
+[UPDATING]
+
+If you are updating from Sympphony 2.0.2, you should apply the instructions under "Update Upload Field" in Symphony's README to any 'Unique File Upload' fields as well.
+
+You may find any IDs you need for the 'sym_entries_data_XXX' expression in the 'sym_fields_uniqueupload' database table (in the 'field_id' column).
+
 [Changes]
 
 1.0
