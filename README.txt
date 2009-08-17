@@ -26,9 +26,11 @@ Rowan Lewis.
 
 [UPDATING]
 
-If you are updating from Sympphony 2.0.2, you should apply the instructions under "Update Upload Field" in Symphony's README to any 'Unique File Upload' fields as well.
+There is no special update procedure for this extension if you are using 
+(or updating to) Symphony 2.0.6. 
 
-You may find any IDs you need for the 'sym_entries_data_XXX' expression in the 'sym_fields_uniqueupload' database table (in the 'field_id' column).
+(There has been a manual update procedure for all upload fields in earlier 
+Symphony versions which has been moved to the Symphony updater script.)
 
 [Changes]
 
