@@ -6,8 +6,7 @@ Author: Michael Eichelsdoerfer
 Build Date: 2009-05-06
 Requirements: Symphony 2
 
-Compatibilty: Tested on Symphony 2.0.3 to 2.0.6
-
+Extension home: http://symphony-cms.com/download/extensions/view/20653/
 
 [Origin]
 
