@@ -11,7 +11,7 @@
 		}
 
 		private function getUniqueFilename($filename) {
-			// since unix timestamp is 10 digits, the unique filename will be limited to ($crop+1+10) characters;
+			## since unix timestamp is 10 digits, the unique filename will be limited to ($crop+1+10) characters;
 			$crop  = '33';
 			return preg_replace("/(.*)(\.[^\.]+)/e", "substr('$1', 0, $crop).'-'.time().'$2'", $filename);
 		}
