@@ -1,9 +1,9 @@
 Field: Unique File Upload
 -------------------------------------------------------------------------------
 
-Version: 1.0
+Version: 1.1
 Author: Michael Eichelsdoerfer
-Build Date: 2009-05-06
+Build Date: 2010-08-11
 Requirements: Symphony 2
 
 Extension home: http://symphony-cms.com/download/extensions/view/20653/
