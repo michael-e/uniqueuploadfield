@@ -5,8 +5,8 @@
 		public function about() {
 			return array(
 				'name'			=> 'Field: Unique File Upload',
-				'version'		=> '1.1',
-				'release-date'	=> '2010-08-11',
+				'version'		=> '1.2',
+				'release-date'	=> '2010-10-12',
 				'author'		=> array(
 					'name'			=> 'Michael Eichelsdoerfer',
 					'website'		=> 'http://www.michael-eichelsdoerfer.de',
@@ -40,13 +40,15 @@
 		}
 
 		public function install() {
-			return $this->_Parent->Database->query("CREATE TABLE `tbl_fields_uniqueupload` (
-				`id` int(11) unsigned NOT NULL auto_increment,
-				`field_id` int(11) unsigned NOT NULL,
-				`destination` varchar(255) NOT NULL,
-				`validator` varchar(50),
-				PRIMARY KEY (`id`),
-				KEY `field_id` (`field_id`))"
+			return $this->_Parent->Database->query(
+				"CREATE TABLE `tbl_fields_uniqueupload` (
+				 `id` int(11) unsigned NOT NULL auto_increment,
+				 `field_id` int(11) unsigned NOT NULL,
+				 `destination` varchar(255) NOT NULL,
+				 `validator` varchar(50),
+				  PRIMARY KEY (`id`),
+				  KEY `field_id` (`field_id`)
+				) ENGINE=MyISAM;"
 			);
 		}
 
