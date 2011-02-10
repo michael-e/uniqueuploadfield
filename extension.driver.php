@@ -5,8 +5,8 @@
 		public function about() {
 			return array(
 				'name'			=> 'Field: Unique File Upload',
-				'version'		=> '1.2',
-				'release-date'	=> '2010-10-12',
+				'version'		=> '1.3',
+				'release-date'	=> '2011-02-10',
 				'author'		=> array(
 					'name'			=> 'Michael Eichelsdoerfer',
 					'website'		=> 'http://www.michael-eichelsdoerfer.de',

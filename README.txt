@@ -1,9 +1,9 @@
 Field: Unique File Upload
 -------------------------------------------------------------------------------
 
-Version: 1.2
+Version: 1.3
 Author: Michael Eichelsdoerfer
-Build Date: 2010-10-12
+Build Date: 2011-02-10
 Requirements: Symphony 2
 
 Extension home: http://symphony-cms.com/download/extensions/view/20653/
@@ -32,6 +32,9 @@ There is no special update procedure for this extension if you are using
 Symphony versions which has been moved to the Symphony updater script.)
 
 [Changes]
+
+1.3
+- Symphony 2.2 compatibility
 
 1.2
 - MySQL5.5 compatibility
