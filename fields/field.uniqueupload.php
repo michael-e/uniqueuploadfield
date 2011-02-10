@@ -7,7 +7,7 @@
 	class FieldUniqueUpload extends FieldUpload {
 		public function __construct(&$parent){
 			parent::__construct($parent);
-			$this->_name = 'Unique File Upload';
+			$this->_name = __('Unique File Upload');
 		}
 
 		private function getUniqueFilename($filename) {
