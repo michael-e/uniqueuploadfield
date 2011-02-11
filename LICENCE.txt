@@ -4,7 +4,7 @@ licence as follows:
 
 ----- begin license block -----
 
-Copyright 2008-2009 Rowan Lewis, Michael Eichelsdoerfer
+Copyright 2008-2011 Rowan Lewis, Michael Eichelsdoerfer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
