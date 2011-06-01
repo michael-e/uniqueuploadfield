@@ -13,7 +13,7 @@
 		private function getUniqueFilename($filename) {
 			## since uniqid() is 13 bytes, the unique filename will be limited to ($crop+1+13) characters;
 			$crop  = '30';
-			return preg_replace("/(.*)(\.[^\.]+)/e", "substr('$1', 0, $crop).'-'.uniqid().'$2'", $filename);
+			return preg_replace("/([^\/]*)(\.[^\.]+)$/e", "substr('$1', 0, $crop).'-'.uniqid().'$2'", $filename);
 		}
 
 		public function checkPostFieldData($data, &$message, $entry_id = NULL) {
