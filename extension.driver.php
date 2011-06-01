@@ -12,7 +12,7 @@
 					'website'		=> 'http://www.michael-eichelsdoerfer.de',
 					'email'			=> 'info@michael-eichelsdoerfer.de'
 				),
-				'description'	=> 'Upload files with unique names, using the UNIX timestamp.'
+				'description'	=> 'Upload files with unique names, using a unique ID.'
 			);
 		}
 
