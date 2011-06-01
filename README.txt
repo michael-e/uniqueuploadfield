@@ -1,9 +1,9 @@
 Field: Unique File Upload
 -------------------------------------------------------------------------------
 
-Version: 1.3
+Version: 1.4
 Author: Michael Eichelsdoerfer
-Build Date: 2011-02-10
+Build Date: 2011-06-01
 Requirements: Symphony 2
 
 Extension home: http://symphony-cms.com/download/extensions/view/20653/
@@ -32,6 +32,9 @@ There is no special update procedure for this extension if you are using
 Symphony versions which has been moved to the Symphony updater script.)
 
 [Changes]
+
+1.4
+- Replaced date() by uniqid(), making filenames even more unique.
 
 1.3
 - Symphony 2.2 compatibility
