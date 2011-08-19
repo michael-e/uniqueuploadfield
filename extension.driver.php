@@ -48,7 +48,7 @@
 				 `validator` varchar(50),
 				  PRIMARY KEY (`id`),
 				  KEY `field_id` (`field_id`)
-				) ENGINE=MyISAM;"
+				) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;"
 			);
 		}
 
