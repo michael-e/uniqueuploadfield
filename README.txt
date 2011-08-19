@@ -1,7 +1,7 @@
 Field: Unique File Upload
 ------------------------------------------------------------------------------
 
-Version: 1.4.1
+Version: 1.4.2
 Author: Michael Eichelsdoerfer
 Build Date: 2011-08-19
 Requirements: Symphony 2
@@ -33,8 +33,11 @@ Symphony versions which has been moved to the Symphony updater script.)
 
 [Changes]
 
-1.4.1
+1.4.2
 - Explicitly set CHARSET and COLLATION when creating the table.
+
+1.4.1
+- Fix for REGEXP so it does not break paths stored in `$filename`.
 
 1.4
 - Replaced date() by uniqid(), making filenames even more unique.
