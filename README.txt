@@ -1,9 +1,9 @@
 Field: Unique File Upload
--------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 
-Version: 1.4
+Version: 1.4.1
 Author: Michael Eichelsdoerfer
-Build Date: 2011-06-01
+Build Date: 2011-08-19
 Requirements: Symphony 2
 
 Extension home: http://symphony-cms.com/download/extensions/view/20653/
@@ -23,7 +23,7 @@ Rowan Lewis.
 
 3. You can now add the "Unique File Upload" field to your sections.
 
-[UPDATING]
+[Updating]
 
 There is no special update procedure for this extension if you are using
 (or updating to) Symphony > 2.0.6.
@@ -32,6 +32,9 @@ There is no special update procedure for this extension if you are using
 Symphony versions which has been moved to the Symphony updater script.)
 
 [Changes]
+
+1.4.1
+- Explicitly set CHARSET and COLLATION when creating the table.
 
 1.4
 - Replaced date() by uniqid(), making filenames even more unique.
