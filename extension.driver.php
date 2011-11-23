@@ -80,18 +80,23 @@ class extension_uniqueuploadfield extends Extension {
             array(
                 'page' => '/publish/new/' ,
                 'delegate' => 'EntryPostCreate' ,
-                'callback' => 'compileBackendFields'
+                'callback' => 'compileFields'
             ) ,
 
             array(
                 'page' => '/publish/edit/' ,
                 'delegate' => 'EntryPostEdit' ,
-                'callback' => 'compileBackendFields'
+                'callback' => 'compileFields'
+            ),
+            array(
+			    'page'		=> '/frontend/',
+				'delegate'	=> 'EventPostSaveFilter',
+				'callback'	=> 'compileFields'
             )
         );
     }
 
-    public function compileBackendFields($context) {
+    public function compileFields($context) {
         foreach (self::$fields as $field) {
             if (!$field->compile($context['entry'])) {
                 //TODO:Error
