@@ -16,7 +16,7 @@
 			return preg_replace("/([^\/]*)(\.[^\.]+)$/e", "substr('$1', 0, $crop).'-'.uniqid().'$2'", $filename);
 		}
 
-		private function getOriginalFilename($filename) {
+		private static function getOriginalFilename($filename) {
 			var_dump($filename);
 			return preg_replace("/([^\/]*)(\-[a-f0-9]{13})(\.[^\.]+)$/", '$1$3', $filename);
 		}
@@ -35,6 +35,6 @@
 			parent::appendFormattedElement($wrapper, $data);
 			$field = $wrapper->getChildrenByName($this->get('element_name'));
 			if(!empty($field))
-				end($field)->appendChild(new XMLElement('original-filename', General::sanitize($this->getOriginalFilename(basename($data['file'])))));
+				end($field)->appendChild(new XMLElement('original-filename', General::sanitize(self::getOriginalFilename(basename($data['file'])))));
 		}
 	}
