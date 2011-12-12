@@ -15,6 +15,6 @@
 	$dictionary = array(
 		
 		'Unique File Upload' =>
-		'Încărcare fişier unică',
+		false,
 	
 	);
