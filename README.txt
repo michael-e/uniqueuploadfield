@@ -1,5 +1,4 @@
-Field: Unique File Upload
-------------------------------------------------------------------------------
+# Field: Unique File Upload
 
 Version: 1.4.2
 Author: Michael Eichelsdoerfer
@@ -8,12 +7,12 @@ Requirements: Symphony 2
 
 Extension home: http://symphony-cms.com/download/extensions/view/20653/
 
-[Origin]
+## Origin
 
 This extension is a variation of the 'Hashed Upload Field' extension by
 Rowan Lewis.
 
-[Installation]
+## Installation
 
 1. Upload the 'uniqueuploadfield' folder in this archive to your Symphony
    'extensions' folder.
@@ -23,7 +22,7 @@ Rowan Lewis.
 
 3. You can now add the "Unique File Upload" field to your sections.
 
-[Updating]
+## Updating
 
 There is no special update procedure for this extension if you are using
 (or updating to) Symphony > 2.0.6.
@@ -31,7 +30,7 @@ There is no special update procedure for this extension if you are using
 (There has been a manual update procedure for all upload fields in earlier
 Symphony versions which has been moved to the Symphony updater script.)
 
-[Changes]
+## Change Log
 
 1.4.2
 - Explicitly set CHARSET and COLLATION when creating the table.
