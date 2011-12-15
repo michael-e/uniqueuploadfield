@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="uniqueuploadfield" status="released" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>Unique Upload Field</name>
+	<description>Create unique filenames automatically</description>
+	<repo type="github">https://github.com/michael-e/uniqueuploadfield</repo>
+	<url type="discuss">http://symphony-cms.com/discuss/thread/684/</url>
+	<types>
+		<type>Field Types</type>
+	</types>
+	<authors>
+		<author>
+			<name github="michael-e" symphony="michael-e">Michael Eichelsdoerfer</name>
+			<website>http://www.michael-eichelsdoerfer.de</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="1.4.2" date="2011-08-19" min="2.0.6" />
+	</releases>
+</extension>
