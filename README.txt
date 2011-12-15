@@ -1,11 +1,8 @@
 # Field: Unique File Upload
 
-Version: 1.4.2
-Author: Michael Eichelsdoerfer
-Build Date: 2011-08-19
-Requirements: Symphony 2
+This extension, just like the Hashed Upload Field extension by Rowan Lewis, provides an upload field which allows multiple copies of a file to be uploaded to the same location. It will retain the filename and append a unique ID to it.
 
-Extension home: http://symphony-cms.com/download/extensions/view/20653/
+The extension uses PHP’s preg_replace function and will crop the filename (i.e. w/o file extension) to a fixed length.
 
 ## Origin
 
