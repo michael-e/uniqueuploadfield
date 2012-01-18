@@ -5,8 +5,8 @@
 	require_once(TOOLKIT . '/fields/field.upload.php');
 
 	class FieldUniqueUpload extends FieldUpload {
-		public function __construct(&$parent){
-			parent::__construct($parent);
+		public function __construct(){
+			parent::__construct();
 			$this->_name = __('Unique File Upload');
 		}
 
