@@ -21,8 +21,8 @@
 			return parent::checkPostFieldData($data, $message, $entry_id);
 		}
 
-		public function processRawFieldData($data, &$status, $simulate = false, $entry_id = NULL) {
+		public function processRawFieldData($data, &$status, &$message = NULL, $simulate = false, $entry_id = NULL) {
 			if (is_array($data) and isset($data['name'])) $data['name'] = $this->getUniqueFilename($data['name']);
-			return parent::processRawFieldData($data, $status, $simulate, $entry_id);
+			return parent::processRawFieldData($data, $status, $message, $simulate, $entry_id);
 		}
 	}
