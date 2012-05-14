@@ -17,7 +17,6 @@
 		}
 
 		private static function getOriginalFilename($filename) {
-			var_dump($filename);
 			return preg_replace("/([^\/]*)(\-[a-f0-9]{13})(\.[^\.]+)$/", '$1$3', $filename);
 		}
 
