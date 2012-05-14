@@ -5,8 +5,8 @@
 	require_once(TOOLKIT . '/fields/field.upload.php');
 
 	class FieldUniqueUpload extends FieldUpload {
-		public function __construct(&$parent){
-			parent::__construct($parent);
+		public function __construct(){
+			parent::__construct();
 			$this->_name = __('Unique File Upload');
 		}
 
@@ -15,9 +15,9 @@
 			return parent::checkPostFieldData($data, $message, $entry_id);
 		}
 
-		public function processRawFieldData($data, &$status, $simulate = false, $entry_id = NULL) {
+		public function processRawFieldData($data, &$status, &$message = NULL, $simulate = false, $entry_id = NULL) {
 			if (is_array($data) and isset($data['name'])) $data['name'] = self::getUniqueFilename($data['name']);
-			return parent::processRawFieldData($data, $status, $simulate, $entry_id);
+			return parent::processRawFieldData($data, $status, $message, $simulate, $entry_id);
 		}
 
 		public function appendFormattedElement(&$wrapper, $data){
