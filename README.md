@@ -42,6 +42,6 @@ If you want to download files named with a clean filename, put the following .ht
 
 That way the unique filename can be entirely hidden from users:
 
-* Alice uploads Report.pdf
-* Symphony renames it to Report-4415297e3af8c.pdf
-* Bob still ends up with Report.pdf on his machine after downloading the file
+* Alice uploads `report.pdf`
+* Symphony renames it to `report-4415297e3af8c.pdf`
+* Bob still ends up with `report.pdf` on his machine after downloading the file
