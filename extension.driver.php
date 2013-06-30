@@ -35,7 +35,7 @@
 				}
 			}
 
-			if(version_compare($symphony_version, '2.3.3beta1', '<='))
+			if(version_compare($symphony_version, '2.3.3beta1', '>'))
 			{
 				// Remove directory from the unique upload fields, similar to Symphony's upload field
 				$upload_tables = Symphony::Database()->fetchCol("field_id", "SELECT `field_id` FROM `tbl_fields_uniqueupload`");

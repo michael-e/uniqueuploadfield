@@ -14,8 +14,11 @@
 		</author>
 	</authors>
 	<releases>
-		<release version="1.8" date="2012-06-27" min="2.3.3">
-			<![CDATA[- Symphony 2.3.3 compatibilty]]>
+		<release version="1.8.1" date="2012-06-30" min="2.3.x">
+			<![CDATA[- Fixed 2.3.3 update procedure]]>
+		</release>
+		<release version="1.8" date="2012-06-27" min="2.3.x">
+			<![CDATA[- Implemented updater for Symphony 2.3.3]]>
 		</release>
 		<release version="1.7" date="2012-05-14" min="2.3.x">
 			<![CDATA[- Symphony 2.3.x compatibilty]]>
