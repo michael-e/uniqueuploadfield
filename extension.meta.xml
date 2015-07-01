@@ -14,6 +14,9 @@
 		</author>
 	</authors>
 	<releases>
+		<release version="1.9" date="2015-07-01" min="2.3.x">
+			<![CDATA[- Minor fixes; code formatting]]>
+		</release>
 		<release version="1.8.1" date="2012-06-30" min="2.3.x">
 			<![CDATA[- Fixed 2.3.3 update procedure]]>
 		</release>
