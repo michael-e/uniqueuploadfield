@@ -2,21 +2,6 @@
 
 class extension_uniqueuploadfield extends Extension
 {
-    public function about()
-    {
-        return array(
-            'name'         => 'Field: Unique File Upload',
-            'version'      => '1.5',
-            'release-date' => '2011-12-17',
-            'author' => array(
-                'name'     => 'Michael Eichelsdoerfer',
-                'website'  => 'http://www.michael-eichelsdoerfer.de',
-                'email'    => 'info@michael-eichelsdoerfer.de'
-            ),
-            'description' => 'Upload files with unique names, using a unique ID.'
-        );
-    }
-
     public function update($previousVersion)
     {
         $symphony_version = Symphony::Configuration()->get('version', 'symphony');
