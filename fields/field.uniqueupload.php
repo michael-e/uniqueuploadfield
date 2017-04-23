@@ -24,7 +24,7 @@ class FieldUniqueUpload extends FieldUpload
         return parent::processRawFieldData($data, $status, $message, $simulate, $entry_id);
     }
 
-    public function appendFormattedElement(&$wrapper, $data)
+    public function appendFormattedElement(XMLElement &$wrapper, $data, $encode = false, $mode = null, $entry_id = null)
     {
         parent::appendFormattedElement($wrapper, $data);
         $field = $wrapper->getChildrenByName($this->get('element_name'));
@@ -35,10 +35,15 @@ class FieldUniqueUpload extends FieldUpload
 
     private static function getUniqueFilename($filename)
     {
-        ## since uniqid() is 13 bytes, the unique filename will be limited to ($crop+1+13) characters;
-        $crop  = '30';
+        return preg_replace_callback(
+            '/([^\/]*)(\.[^\.]+)$/',
+            function ($m) {
+                // uniqid() is 13 bytes, so the unique filename will be limited to (30 + 1 + 13) characters
 
-        return preg_replace("/([^\/]*)(\.[^\.]+)$/e", "substr('$1', 0, $crop).'-'.uniqid().'$2'", $filename);
+                return substr($m[1], 0, 30) . '-' . uniqid() . $m[2];
+            },
+            $filename
+        );
     }
 
     private static function getCleanFilename($filename)

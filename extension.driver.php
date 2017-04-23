@@ -2,7 +2,7 @@
 
 class extension_uniqueuploadfield extends Extension
 {
-    public function update($previousVersion)
+    public function update($previousVersion = false)
     {
         $symphony_version = Symphony::Configuration()->get('version', 'symphony');
 
