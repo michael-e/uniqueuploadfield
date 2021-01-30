@@ -22,11 +22,13 @@ class extension_uniqueuploadfield extends Extension
             // Remove directory from the unique upload fields, similar to Symphony's upload field
             $upload_tables = Symphony::Database()->fetchCol("field_id", "SELECT `field_id` FROM `tbl_fields_uniqueupload`");
 
-            if (is_array($upload_tables) && !empty($upload_tables)) foreach ($upload_tables as $field) {
-                Symphony::Database()->query(sprintf(
-                    "UPDATE tbl_entries_data_%d SET file = substring_index(file, '/', -1)",
-                    $field
-                ));
+            if (is_array($upload_tables) && !empty($upload_tables)) {
+                foreach ($upload_tables as $field) {
+                    Symphony::Database()->query(sprintf(
+                        "UPDATE tbl_entries_data_%d SET file = substring_index(file, '/', -1)",
+                        $field
+                    ));
+                }
             }
         }
     }

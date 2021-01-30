@@ -1,6 +1,8 @@
 <?php
 
-if (!defined('__IN_SYMPHONY__')) die('<h2>Symphony Error</h2><p>You cannot directly access this file</p>');
+if (!defined('__IN_SYMPHONY__')) {
+    die('<h2>Symphony Error</h2><p>You cannot directly access this file</p>');
+}
 
 require_once(TOOLKIT . '/fields/field.upload.php');
 
@@ -12,15 +14,19 @@ class FieldUniqueUpload extends FieldUpload
         $this->_name = __('Unique File Upload');
     }
 
-    public function checkPostFieldData($data, &$message, $entry_id = NULL)
+    public function checkPostFieldData($data, &$message, $entry_id = null)
     {
-        if (is_array($data) and isset($data['name'])) $data['name'] = self::getUniqueFilename($data['name']);
+        if (is_array($data) and isset($data['name'])) {
+            $data['name'] = self::getUniqueFilename($data['name']);
+        }
         return parent::checkPostFieldData($data, $message, $entry_id);
     }
 
-    public function processRawFieldData($data, &$status, &$message = NULL, $simulate = false, $entry_id = NULL)
+    public function processRawFieldData($data, &$status, &$message = null, $simulate = false, $entry_id = null)
     {
-        if (is_array($data) and isset($data['name'])) $data['name'] = self::getUniqueFilename($data['name']);
+        if (is_array($data) and isset($data['name'])) {
+            $data['name'] = self::getUniqueFilename($data['name']);
+        }
         return parent::processRawFieldData($data, $status, $message, $simulate, $entry_id);
     }
 
@@ -28,7 +34,7 @@ class FieldUniqueUpload extends FieldUpload
     {
         parent::appendFormattedElement($wrapper, $data);
         $field = $wrapper->getChildrenByName($this->get('element_name'));
-        if(!empty($field)) {
+        if (!empty($field)) {
             end($field)->appendChild(new XMLElement('clean-filename', General::sanitize(self::getCleanFilename(basename($data['file'])))));
         }
     }
